@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Медоварня "Золотой Улей" | Традиции русской медоварни</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Navigation -->
+<nav class="nav-glass" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="logo">
+      <span class="logo-icon">🍯</span>
+      <span>Золотой Улей</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Главная</a></li>
+      <li><a href="#about" class="nav-link">О нас</a></li>
+      <li><a href="#menu" class="nav-link">Меню</a></li>
+      <li><a href="#booking" class="nav-link">Бронирование</a></li>
+      <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="profile-btn" id="profileBtn" aria-label="Профиль">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 10c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+        <span class="profile-btn-text">Войти</span>
+      </button>
+      <button class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+<div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="hero-orb orb-3"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-star">⭐</span>
+      <span>4.82 · 773 посещения · 55 отзывов</span>
+    </div>
+    <h1 class="hero-title">Прикоснитесь<br><em>к традициям</em><br>русской медоварни</h1>
+    <p class="hero-subtitle">Дегустация настоящих медовых напитков<br class="desktop-br"> в атмосферном историческом пространстве</p>
+    <div class="hero-buttons">
+      <a href="#booking" class="btn-primary">
+        Забронировать место
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 0l2 8h8l-6.5 5 2.5 7-6-4.5-6 4.5 2.5-7-6.5-5h8z"/></svg>
+      </a>
+      <a href="#about" class="btn-secondary">
+        Узнать больше
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 18l-1.5-1.5L14 11H0V9h14L8.5 3.5 10 2l8 8z"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats" id="heroStats">
+      <div class="stat"><span class="stat-num" data-count="20" data-suffix="+">0</span><span class="stat-label">лет традиций</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">сортов мёда</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-count="3000" data-suffix="+" data-format="space">0</span><span class="stat-label">довольных гостей</span></div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Листайте</span>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Что вас ожидает</span>
+      <h2 class="section-title">Погружение в историю</h2>
+      <p class="section-subtitle">Каждый визит — это путешествие в глубину веков русских питейных традиций</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon-wrap"><span class="about-icon">📜</span></div>
+        <h3>История традиций</h3>
+        <p>Узнайте, что пили на Руси до появления чая, кофе и крепкого спиртного</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon-wrap"><span class="about-icon">🏺</span></div>
+        <h3>Древняя посуда</h3>
+        <p>Увидите, из какой посуды пили наши предки и услышите связанные с ней легенды</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon-wrap"><span class="about-icon">🍯</span></div>
+        <h3>Секреты медоварения</h3>
+        <p>Раскроем, зачем бочки с мёдом на десятилетия закапывали в землю</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon-wrap"><span class="about-icon">💫</span></div>
+        <h3>Обычаи и поверья</h3>
+        <p>Откуда пошли выражения «наесться досыта» и «медовый месяц»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Наша продукция</span>
+      <h2 class="section-title">Меню медоварни</h2>
+      <p class="section-subtitle">Авторские напитки по старинным рецептам и деликатесы от местных производителей</p>
+    </div>
+
+    <!-- Menu Filter Tabs -->
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-filter="all">Всё меню</button>
+      <button class="tab-btn" data-filter="drinks">Напитки</button>
+      <button class="tab-btn" data-filter="food">Закуски</button>
+      <button class="tab-btn" data-filter="sets">Сеты</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+
+      <div class="menu-card" data-category="food" data-name="Мягкая карамель" data-price="390 ₽"
+           data-description="Мягкая карамель в ассортименте, приготовлена из натуральных ингредиентов без добавления искусственных добавок. Каждое изделие уникально."
+           data-img="img_1.jpg">
+        <div class="menu-card-image">
+          <img src="img_1.jpg" alt="Мягкая карамель" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">390 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Мягкая карамель</h3>
+          <p>Из натуральных ингредиентов</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="drinks" data-name="Русские медовые напитки" data-price="250 ₽"
+           data-description="Авторские напитки, вдохновлённые старинными рецептами. Морс со вкусом смородины и лаванды. Освежающий, не сладкий."
+           data-img="img_2.jpg">
+        <div class="menu-card-image">
+          <img src="img_2.jpg" alt="Медовые напитки" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">250 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Русские медовые напитки</h3>
+          <p>Смородина и лаванда</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="drinks" data-name="Душепарка" data-price="200 ₽"
+           data-description="Авторские напитки, вдохновлённые старинными рецептами. Душепарка — напиток на основе мёда, сока клюквы, брусники и специй."
+           data-img="img_6.jpg">
+        <div class="menu-card-image">
+          <img src="img_6.jpg" alt="Душепарка" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">200 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Душепарка</h3>
+          <p>Мёд, клюква, брусника, специи</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="drinks" data-name="Квас медовый" data-price="Уточнить"
+           data-description="Традиционный напиток на основе натурального мёда. Освежающий и полезный."
+           data-img="img_4.jpg">
+        <div class="menu-card-image">
+          <img src="img_4.jpg" alt="Квас медовый" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">Уточнить</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Квас медовый</h3>
+          <p>Традиционный рецепт</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="drinks" data-name="Мёд ставленный" data-price="Уточнить"
+           data-description="Традиционный ставленный мёд по старинным рецептам. Выдержанный и ароматный."
+           data-img="img_5.jpg">
+        <div class="menu-card-image">
+          <img src="img_5.jpg" alt="Мёд ставленный" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">Уточнить</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Мёд ставленный</h3>
+          <p>Выдержанный, ароматный</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="drinks" data-name="Душепарка премиум" data-price="Уточнить"
+           data-description="Премиальный медовый напиток с ягодами и пряностями."
+           data-img="img_7.jpg">
+        <div class="menu-card-image">
+          <img src="img_7.jpg" alt="Душепарка премиум" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge premium-badge">Premium</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Душепарка премиум</h3>
+          <p>Ягоды и пряности</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="drinks" data-name="Душепарка на праздник" data-price="Уточнить"
+           data-description="Праздничный вариант традиционного напитка в красивой упаковке."
+           data-img="img_3.jpg">
+        <div class="menu-card-image">
+          <img src="img_3.jpg" alt="Душепарка на праздник" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">Уточнить</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Душепарка на праздник</h3>
+          <p>В красивой упаковке</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="sets" data-name="Дегустационный сет расширенный" data-price="800 ₽"
+           data-description="Дегустационный сет из 6 видов фирменных медовых напитков. В сет входят традиционные сорта и авторский Медовар."
+           data-img="img_8.jpg">
+        <div class="menu-card-image">
+          <img src="img_8.jpg" alt="Дегустационный сет расширенный" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">800 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Сет расширенный</h3>
+          <p>6 видов напитков</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="sets" data-name="Экскурсия-дегустация" data-price="650 ₽"
+           data-description="Приглашаем вас на экскурсию-дегустацию, на которой вы узнаете, какие напитки испокон веков пили на Руси, сколько лет они зрели в бочках."
+           data-img="img_9.jpg">
+        <div class="menu-card-image">
+          <img src="img_9.jpg" alt="Экскурсия-дегустация" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">650 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Экскурсия-дегустация</h3>
+          <p>История + дегустация</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="food" data-name="Мясные деликатесы" data-price="600 ₽"
+           data-description="У нас представлена мясная сыровяленная продукция от компании 'Лавровские просторы', а также домашние колбасы."
+           data-img="img_10.jpg">
+        <div class="menu-card-image">
+          <img src="img_10.jpg" alt="Мясные деликатесы" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">600 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Мясные деликатесы</h3>
+          <p>Сыровяленная продукция</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="food" data-name="Сыры от Сеновал" data-price="200 ₽"
+           data-description="Уникальные виды свежих и выдержанных сыров только из молока собственных коров из Переславля-Залесского."
+           data-img="img_11.jpg">
+        <div class="menu-card-image">
+          <img src="img_11.jpg" alt="Сыры от Сеновал" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">200 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Сыры от Сеновал</h3>
+          <p>Переславль-Залесский</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="food" data-name="Сыры Эко Вилладж" data-price="200 ₽"
+           data-description="Натуральные, искусно сваренные и грамотно выдержанные сыры от сыроварни 'Эко Вилладж' из деревни Филимоново Ростовского района."
+           data-img="img_12.jpg">
+        <div class="menu-card-image">
+          <img src="img_12.jpg" alt="Сыры Эко Вилладж" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">200 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Сыры Эко Вилладж</h3>
+          <p>Деревня Филимоново</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="sets" data-name="Дегустационный сет" data-price="650 ₽"
+           data-description="Сет из 4-х видов слабоалкогольных фирменных медовых напитков. Подаётся с нарезкой из свежих фермерских сыров и колбас."
+           data-img="img_13.jpg">
+        <div class="menu-card-image">
+          <img src="img_13.jpg" alt="Дегустационный сет" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">650 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Дегустационный сет</h3>
+          <p>4 напитка + сыры и колбасы</p>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="food" data-name="Мёд в ассортименте" data-price="700 ₽"
+           data-description="Натуральный качественный мед от местных пасечников. В наличии: гречишный, разнотравье. Продаётся в банках разного объёма."
+           data-img="img_14.jpg">
+        <div class="menu-card-image">
+          <img src="img_14.jpg" alt="Мёд в ассортименте" loading="lazy">
+          <div class="menu-card-overlay"><button class="btn-view">Подробнее</button></div>
+          <div class="menu-card-badge">700 ₽</div>
+        </div>
+        <div class="menu-card-content">
+          <h3>Мёд в ассортименте</h3>
+          <p>Гречишный, разнотравье</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Section -->
+<section id="booking" class="booking-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Тарифы</span>
+      <h2 class="section-title">Условия бронирования</h2>
+      <p class="section-subtitle">Выберите подходящий формат посещения и забронируйте место</p>
+    </div>
+    <div class="booking-grid">
+      <div class="booking-card">
+        <div class="booking-tag">Популярный</div>
+        <h3>Стандартный</h3>
+        <p class="booking-desc">Дегустация 4-х алкогольных напитков</p>
+        <div class="booking-price"><span>650</span> ₽</div>
+        <ul class="booking-features">
+          <li><span class="check">✓</span> 4 напитка на выбор</li>
+          <li><span class="check">✓</span> Экскурсия по медоварне</li>
+          <li><span class="check">✓</span> История традиций</li>
+          <li><span class="check">✓</span> Длительность: 1 час</li>
+        </ul>
+        <button class="btn-booking" data-package="Стандартный (алкогольный)">Выбрать</button>
+      </div>
+      <div class="booking-card">
+        <h3>Безалкогольный</h3>
+        <p class="booking-desc">Дегустация 4-х безалкогольных напитков</p>
+        <div class="booking-price"><span>650</span> ₽</div>
+        <ul class="booking-features">
+          <li><span class="check">✓</span> 4 напитка на выбор</li>
+          <li><span class="check">✓</span> Экскурсия по медоварне</li>
+          <li><span class="check">✓</span> История традиций</li>
+          <li><span class="check">✓</span> Длительность: 1 час</li>
+        </ul>
+        <button class="btn-booking" data-package="Стандартный (безалкогольный)">Выбрать</button>
+      </div>
+      <div class="booking-card featured">
+        <div class="booking-tag premium">Premium</div>
+        <h3>Расширенный</h3>
+        <p class="booking-desc">Дегустация 6 алкогольных напитков</p>
+        <div class="booking-price"><span>800</span> ₽</div>
+        <ul class="booking-features">
+          <li><span class="check">✓</span> 6 напитков на выбор</li>
+          <li><span class="check">✓</span> Расширенная экскурсия</li>
+          <li><span class="check">✓</span> Подарочный мёд 100г</li>
+          <li><span class="check">✓</span> Длительность: 1.5 часа</li>
+        </ul>
+        <button class="btn-booking" data-package="Расширенный">Выбрать</button>
+      </div>
+      <div class="booking-card">
+        <div class="booking-tag kids">Детский</div>
+        <h3>Для детей</h3>
+        <p class="booking-desc">1 напиток и угощение</p>
+        <div class="booking-price"><span>250</span> ₽</div>
+        <ul class="booking-features">
+          <li><span class="check">✓</span> Безалкогольный напиток</li>
+          <li><span class="check">✓</span> Медовые сладости</li>
+          <li><span class="check">✓</span> Мини-экскурсия</li>
+          <li><span class="check">✓</span> Для детей до 6 лет</li>
+        </ul>
+        <button class="btn-booking" data-package="Детский">Выбрать</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="reviews-section">
+  <div class="container">
+    <div class="section-header reviews-header">
+      <div>
+        <span class="section-badge">Отзывы</span>
+        <h2 class="section-title">Что говорят гости</h2>
+        <p class="section-subtitle">Живые впечатления от наших посетителей</p>
+      </div>
+      <button class="btn-add-review" id="addReviewBtn">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm5 11h-4v4H9v-4H5V9h4V5h2v4h4v2z"/>
+        </svg>
+        <span>Оставить отзыв</span>
+      </button>
+    </div>
+    <div class="reviews-grid" id="reviewsList">
+      <div class="review-card static-review">
+        <div class="review-header">
+          <div class="review-avatar" style="--avatar-color: #D4AF37;">А</div>
+          <div class="review-meta">
+            <h4>Анастасия</h4>
+            <p class="review-date">6 ноября 2024</p>
+            <p class="review-experience">🏅 20 экскурсий</p>
+          </div>
+        </div>
+        <div class="review-rating" data-rating="5">
+          <span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span>
+        </div>
+        <p class="review-text">Место супер, всё понравилось! Всем рекомендую посетить в Ростове.</p>
+      </div>
+      <div class="review-card static-review">
+        <div class="review-header">
+          <div class="review-avatar" style="--avatar-color: #8B6914;">Ю</div>
+          <div class="review-meta">
+            <h4>Юрий</h4>
+            <p class="review-date">3 ноября 2024</p>
+          </div>
+        </div>
+        <div class="review-rating" data-rating="5">
+          <span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span>
+        </div>
+        <p class="review-text">Все прошло замечательно: вкусно и интересно. Разговор с человеком дела всегда завораживает, час пролетел незаметно.</p>
+      </div>
+      <div class="review-card static-review">
+        <div class="review-header">
+          <div class="review-avatar" style="--avatar-color: #A0522D;">Ю</div>
+          <div class="review-meta">
+            <h4>Юлия</h4>
+            <p class="review-date">18 сентября 2024</p>
+            <p class="review-experience">🏅 10 экскурсий</p>
+          </div>
+        </div>
+        <div class="review-rating" data-rating="5">
+          <span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span><span class="star-display filled">★</span>
+        </div>
+        <p class="review-text">Илья, спасибо за мед. Питер с вами 🤝</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Контакты</span>
+      <h2 class="section-title">Свяжитесь с нами</h2>
+    </div>
+    <div class="contact-grid">
+      <a href="https://t.me/golden_hive" target="_blank" class="contact-card">
+        <div class="contact-icon tg-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.756 8.276c-.132.593-.473.74-.959.461l-2.65-1.953-1.279 1.231c-.141.141-.26.26-.534.26l.191-2.717 4.935-4.459c.214-.191-.046-.298-.332-.107l-6.1 3.842-2.628-.822c-.571-.178-.582-.571.119-.846l10.277-3.963c.476-.178.892.108.736.846z"/>
+          </svg>
+        </div>
+        <h3>Telegram</h3>
+        <p>@golden_hive</p>
+      </a>
+      <a href="https://vk.com/golden_hive" target="_blank" class="contact-card">
+        <div class="contact-icon vk-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.066 13.812c.523.53 1.074 1.033 1.527 1.635.202.267.391.547.537.86.206.442.019.927-.337.953h-2.242c-.571.047-1.075-.177-1.492-.588-.33-.326-.635-.678-.948-1.014-.151-.163-.309-.319-.485-.454-.368-.281-.689-.211-.895.187-.211.405-.259.847-.269 1.292-.015.688-.208.869-.898.901-1.482.069-2.886-.163-4.176-.987-.568-.364-1.034-.838-1.477-1.331-1.324-1.473-2.341-3.152-3.258-4.903-.202-.387-.057-.598.361-.604.771-.011 1.543-.009 2.314 0 .279.003.467.178.596.428.434.841.947 1.631 1.54 2.361.173.213.35.425.581.568.264.164.466.111.592-.176.08-.182.114-.38.134-.578.069-.687.078-1.374-.033-2.058-.063-.391-.293-.643-.682-.71-.198-.035-.168-.103-.073-.208.16-.177.311-.287.548-.287h2.016c.318.063.389.206.432.527l.002 2.246c-.004.133.067.529.309.617.194.063.323-.091.44-.207.528-.526.905-1.145 1.243-1.79.147-.281.274-.575.399-.867.093-.218.237-.327.487-.321l2.428.003c.072 0 .145 0 .215.013.414.074.527.263.398.668-.199.625-.584 1.152-.968 1.679-.41.561-.849 1.105-1.256 1.671-.375.521-.345.782.123 1.222z"/>
+          </svg>
+        </div>
+        <h3>ВКонтакте</h3>
+        <p>vk.com/golden_hive</p>
+      </a>
+      <a href="tel:+79001234567" class="contact-card">
+        <div class="contact-icon phone-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.487 17.14l-4.065-3.696c-.399-.363-1.015-.344-1.391.043l-1.391 1.457c-.134.14-.351.146-.495.024l-.869-.653c-1.572-1.179-3.094-2.7-4.273-4.273l-.653-.869c-.122-.144-.116-.361.024-.495l1.457-1.391c.387-.376.406-.992.043-1.391L4.86 1.513C4.493 1.097 3.853 1.08 3.462 1.472L1.472 3.462c-.817.817-.817 2.144 0 2.961l.653.869c3.141 4.189 7.791 8.839 11.98 11.98l.869.653c.817.817 2.144.817 2.961 0l1.99-1.99c.392-.391.375-1.031-.041-1.398z"/>
+          </svg>
+        </div>
+        <h3>Телефон</h3>
+        <p>+7 (900) 123-45-67</p>
+      </a>
+      <a href="https://maps.google.com/?q=Соборная площадь, Ростов" target="_blank" class="contact-card">
+        <div class="contact-icon map-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+        </div>
+        <h3>Адрес</h3>
+        <p>Соборная площадь, Ростов</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span>🍯</span>
+          <span>Золотой Улей</span>
+        </div>
+        <p>Традиции русской питейной культуры с любовью к истории</p>
+        <div class="footer-social">
+          <a href="https://t.me/golden_hive" target="_blank" class="social-link" aria-label="Telegram">TG</a>
+          <a href="https://vk.com/golden_hive" target="_blank" class="social-link" aria-label="VK">VK</a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#booking">Бронирование</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Контакты</h4>
+        <p>📍 Соборная площадь, Ростов</p>
+        <p>📞 +7 (900) 123-45-67</p>
+        <p>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ed84838b82ad8a8281898883c085849b88c39f98">[email&#160;protected]</a></p>
+      </div>
+      <div class="footer-links-group">
+        <h4>Режим работы</h4>
+        <p>Пн–Пт: 10:00–20:00</p>
+        <p>Сб–Вс: 11:00–21:00</p>
+        <p class="footer-note">Без перерыва</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Медоварня «Золотой Улей». Все права защищены.</p>
+      <p class="footer-age">18+ Чрезмерное употребление алкоголя вредит здоровью</p>
+    </div>
+  </div>
+</footer>
+
+<!-- MODALS -->
+
+<!-- Product Modal -->
+<div id="productModal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content modal-product">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <div class="modal-product-img-wrap">
+      <img id="modalImg" src="" alt="">
+    </div>
+    <div class="modal-product-body">
+      <h3 id="modalName"></h3>
+      <p class="modal-price" id="modalPrice"></p>
+      <p class="modal-description" id="modalDescription"></p>
+      <button class="btn-primary full-width">Заказать</button>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <div class="modal-header-icon">📅</div>
+    <h3>Бронирование экскурсии</h3>
+    <p class="modal-subtitle" id="selectedPackage"></p>
+    <form id="bookingForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bookingName">Ваше имя</label>
+          <input type="text" id="bookingName" placeholder="Иван Иванов" required>
+        </div>
+        <div class="form-group">
+          <label for="bookingPhone">Телефон</label>
+          <input type="tel" id="bookingPhone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="bookingEmail">Email</label>
+        <input type="email" id="bookingEmail" placeholder="your@email.com" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bookingDate">Дата посещения</label>
+          <input type="date" id="bookingDate" required>
+        </div>
+        <div class="form-group">
+          <label for="bookingPeople">Кол-во человек</label>
+          <input type="number" id="bookingPeople" min="1" max="20" value="2" required>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary full-width">Забронировать место</button>
+    </form>
+    <p id="bookingMessage"></p>
+  </div>
+</div>
+
+<!-- Profile Modal -->
+<div id="profileModal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <div id="profileLoggedIn" style="display:none;">
+      <div class="profile-info">
+        <div class="profile-avatar-large">
+          <svg width="48" height="48" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 10c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg>
+        </div>
+        <h4 id="profName"></h4>
+        <p id="profEmail"></p>
+      </div>
+      <button class="btn-secondary full-width" id="logoutBtn">Выйти из аккаунта</button>
+    </div>
+    <div id="profileNotLogged">
+      <div class="modal-header-icon">🍯</div>
+      <h3>Добро пожаловать!</h3>
+      <p class="modal-subtitle">Войдите, чтобы оставить отзыв и управлять бронированиями</p>
+      <button class="btn-primary full-width" id="openLogin">Войти</button>
+      <button class="btn-secondary full-width" id="openRegister">Зарегистрироваться</button>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <div class="modal-header-icon">🔑</div>
+    <h3>Вход</h3>
+    <div class="form-group">
+      <label for="loginEmail">Email</label>
+      <input type="email" id="loginEmail" placeholder="your@email.com">
+    </div>
+    <div class="form-group">
+      <label for="loginPassword">Пароль</label>
+      <div class="input-password-wrap">
+        <input type="password" id="loginPassword" placeholder="••••••">
+        <button type="button" class="toggle-password" data-target="loginPassword">👁</button>
+      </div>
+    </div>
+    <button class="btn-primary full-width" id="loginBtn">Войти</button>
+    <p class="modal-link">Нет аккаунта? <a href="#" id="switchToRegister">Зарегистрироваться</a></p>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <div class="modal-header-icon">✨</div>
+    <h3>Регистрация</h3>
+    <div class="form-group">
+      <label for="regName">Имя</label>
+      <input type="text" id="regName" placeholder="Иван Иванов">
+    </div>
+    <div class="form-group">
+      <label for="regEmail">Email</label>
+      <input type="email" id="regEmail" placeholder="your@email.com">
+    </div>
+    <div class="form-group">
+      <label for="regPassword">Пароль</label>
+      <div class="input-password-wrap">
+        <input type="password" id="regPassword" placeholder="Минимум 6 символов">
+        <button type="button" class="toggle-password" data-target="regPassword">👁</button>
+      </div>
+    </div>
+    <button class="btn-primary full-width" id="registerBtn">Зарегистрироваться</button>
+    <p class="modal-link">Уже есть аккаунт? <a href="#" id="switchToLogin">Войти</a></p>
+  </div>
+</div>
+
+<!-- Review Modal -->
+<div id="reviewModal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <div class="modal-header-icon">⭐</div>
+    <h3>Оставить отзыв</h3>
+    <p class="modal-subtitle">Поделитесь впечатлениями о визите</p>
+    <div class="form-group">
+      <label>Оценка</label>
+      <div class="star-rating-wrap">
+        <div class="star-rating" id="starRating" role="radiogroup" aria-label="Оценка">
+          <button type="button" class="star" data-rating="1" role="radio" aria-label="1 звезда">★</button>
+          <button type="button" class="star" data-rating="2" role="radio" aria-label="2 звезды">★</button>
+          <button type="button" class="star" data-rating="3" role="radio" aria-label="3 звезды">★</button>
+          <button type="button" class="star" data-rating="4" role="radio" aria-label="4 звезды">★</button>
+          <button type="button" class="star" data-rating="5" role="radio" aria-label="5 звёзд">★</button>
+        </div>
+        <span class="star-label" id="starLabel">Отлично!</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="reviewText">Ваш отзыв</label>
+      <textarea id="reviewText" rows="4" placeholder="Расскажите о вашем впечатлении..."></textarea>
+      <span class="char-count" id="charCount">0 / 500</span>
+    </div>
+    <button class="btn-primary full-width" id="submitReview">Опубликовать отзыв</button>
+  </div>
+</div>
+
+<!-- Delete Confirm Modal -->
+<div id="deleteModal" class="modal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content modal-small">
+    <div class="modal-header-icon">🗑️</div>
+    <h3>Удалить отзыв?</h3>
+    <p class="modal-subtitle">Это действие нельзя отменить</p>
+    <div class="modal-actions">
+      <button class="btn-secondary" id="cancelDelete">Отмена</button>
+      <button class="btn-danger" id="confirmDelete">Удалить</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast">
+  <span class="toast-icon" id="toastIcon">✅</span>
+  <span id="toastMessage"></span>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
